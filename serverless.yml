@@ -10,3 +10,7 @@ functions:
     handler: handler.run
     events:
       - sqs: arn:aws:sqs:us-west-2:596445984235:long-function-queue.fifo
+      - http:
+          path: hola
+          method: get
+          cors: true
