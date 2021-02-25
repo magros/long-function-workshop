@@ -9,8 +9,7 @@ module.exports.run = async (event, context) => {
 
     return {
         statusCode: 200,
-        headers: {"Content-Type": "application/pdf"},
-        body: {message: "Ok"},
-        isBase64Encoded: true,
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({message: "Ok"})
     };
 }
