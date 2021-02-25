@@ -1,10 +1,12 @@
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
 
 module.exports.run = async (event, context) => {
-    
+
+    console.log(event)
+
     const name = event.queryStringParameters.name
 
-    // await delay(50000) //Simulate a long job
+    await delay(50000) //Simulate a long job
 
     return {
         statusCode: 200,
