@@ -6,7 +6,9 @@ module.exports.run = async (event, context) => {
 
     const name = event.queryStringParameters.name
 
-    await delay(50000) //Simulate a long job
+    // const name = JSON.parse(event.Records[0].body).name
+
+    // await delay(50000) //Simulate a long job
 
     return {
         statusCode: 200,
