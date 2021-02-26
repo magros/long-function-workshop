@@ -7,7 +7,7 @@ module.exports.run = async (event, context) => {
 
     await delay(50000)
 
-    await axios.post('marco-5cd40021.localhost.run/test-long-job-webhook', {
+    await axios.post('http://marco-5cd40021.localhost.run/test-long-job-webhook', {
         message: `Hola ${name}`
     })
 
