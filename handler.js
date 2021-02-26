@@ -1,8 +1,9 @@
+const axios = require('axios')
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms))
 
 module.exports.run = async (event, context) => {
 
-    console.log(event)
+    // console.log(event)
 
     const name = event.queryStringParameters.name
 
