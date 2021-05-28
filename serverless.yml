@@ -1,4 +1,4 @@
-service: long-function
+service: long-function-II
 
 provider:
   name: aws
@@ -10,7 +10,6 @@ functions:
   hello:
     handler: handler.run
     events:
-      - sqs: arn:aws:sqs:us-west-2:596445984235:otra-queue.fifo
       - http:
           path: hola
           method: get
